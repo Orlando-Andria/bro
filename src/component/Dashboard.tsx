@@ -10,7 +10,6 @@ const Dashboard: React.FC = () => {
       <div className="dashboard">
         <div className="title-dash">
         <h1 className="h-1">Dashboard</h1>
-      {/* <Modal /> */}
         <p className="total">CA:12889M</p>
         </div>
         
