@@ -11,6 +11,7 @@ export type Product = {
     filterFunction?: (product: Product) => boolean;
     limit?: number;
     hideTitle?: boolean; 
+    id?:number
   };
 
   export default Products;

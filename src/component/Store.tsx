@@ -1,8 +1,9 @@
-   import React, { useState } from "react";
-import "./store.scss";
+   import { useState } from "react";
+   import "./store.scss";
+import Products from "./data";
 
 function Store() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false);
  
   const [products, setProducts] = useState([
     {
@@ -37,10 +38,10 @@ function Store() {
   ]);
 
   const [confirmationVisible, setConfirmationVisible] = useState(false);
-  const [currentProduct, setCurrentProduct] = useState(null);
+  const [currentProduct, setCurrentProduct] = useState<Products | null>(null);
   const [createMode, setCreateMode] = useState(false);
   const [newProduct, setNewProduct] = useState({
-    id: null,
+    id: 0,
     name: "",
     price: "",
     stock: 0,
@@ -60,7 +61,7 @@ function Store() {
   const confirmPurchase = () => {
     setProducts((prevProducts) =>
       prevProducts.map((product) =>
-        product.id === currentProduct.id
+        product.id === currentProduct!.id
           ? { ...product, stock: product.stock - 1 }
           : product
       )
@@ -78,10 +79,10 @@ function Store() {
     const productToAdd = { ...newProduct, id: newId };
     setProducts([...products, productToAdd]);
     setCreateMode(false);
-    setNewProduct({ id: null, name: "", price: "", stock: 0, image: "" });
+    setNewProduct({ id:0, name: "", price: "", stock: 0, image: "" });
   };
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+  // const toggleMenu = () => setMenuOpen(!menuOpen);
   
   return (
     <div className="dashboard">
@@ -145,14 +146,7 @@ function Store() {
                     setNewProduct({ ...newProduct, price: e.target.value })
                   }
                 />
-                <input
-                  type="number"
-                  placeholder="Stock"
-                  value={newProduct.stock}
-                  onChange={(e) =>
-                    setNewProduct({ ...newProduct, stock: e.target.value })
-                  }
-                />
+               
                 <input
                   type="text"
                   placeholder="URL de l'image"
@@ -176,7 +170,7 @@ function Store() {
           {confirmationVisible && currentProduct && (
             <div className="container-Alert">
               <div className="confirmation">
-                <p>Êtes-vous sûr de vouloir acheter {currentProduct.name} ?</p>
+                <p>Êtes-vous sûr de vouloir acheter ?</p>
                 <div className="Wrap-btn">
                   <button onClick={confirmPurchase} className="oui-btn">
                     Oui
