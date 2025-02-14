@@ -12,7 +12,7 @@ const Login: React.FC = () => {
   return (
     <div className="login">
       <form onSubmit={handleSubmit} className="login-form">
-        <img src="./public/Logo.jpeg" alt="Logo" className="logo" />
+        <img src="./Logo.jpeg" alt="Logo" className="logo" />
         <input
           type="email"
           placeholder="Email"
