@@ -171,6 +171,7 @@ body {
     height: 20px;
   }
   
+  
 }
 .clientlist{
   width: 1000px;
@@ -193,10 +194,14 @@ body {
     margin-left: 0;
   }
 }
+.container-amount{
+  width: 200px;
+  text-align: center;
+}
 
   .createbtn {
     font-size: 24px;
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Exemple de police */
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
     padding: 10px 20px;
     background-color: #003d52;
     color: white;
