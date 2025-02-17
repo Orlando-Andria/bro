@@ -28,8 +28,8 @@ const Login: React.FC = () => {
           required
         />
         <button type="submit">Se connecter</button>
-        <button className="google-login"><img src="../src/image/devicon_google.png" alt="" />Continue avec Google</button>
-        <button className="apple-login"><img src="../src/image/devicon_apple.png" alt="" />Continue avec Apple</button>
+        <button className="google-login"><img src="./devicon_google.png" alt="" />Continue avec Google</button>
+        <button className="apple-login"><img src="./devicon_apple.png" alt="" />Continue avec Apple</button>
       </form>
     </div>
   );
