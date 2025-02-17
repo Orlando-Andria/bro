@@ -1,11 +1,10 @@
-// import { mangoFusionPaletteDark } from "@mui/x-charts";
-// import { useState } from "react";
+
 import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   return (
     <div className="navBar">
-      <img src="./src/image/Logo.jpeg" alt="logo" className="Logo" />
+      <img src="./Logo.jpeg" alt="logo" className="Logo" />
       <nav>
         <ul
           style={{
@@ -18,25 +17,25 @@ const Navbar: React.FC = () => {
           }}
         >
           <li className="li_nav">
-            <img src="../src/image/dash.png" alt="" />
+            <img src="./dash.png" alt="" />
             <Link to="/" className="link_style">
               Dashboard
             </Link>
           </li>
           <li className="li_nav">
-            <img src="../src/image/prod.png" alt="" />
+            <img src="./prod.png" alt="" />
             <Link to="/products" className="link_style">
               Products
             </Link>
           </li>
           <li className="li_nav">
-            <img src="../src/image/client.png" alt="" />
+            <img src="./client.png" alt="" />
             <Link to="/clients" className="link_style">
               Clients
             </Link>
           </li>
           <li className="li_nav">
-            <img src="../src/image/store.png" alt="" />
+            <img src="./store.png" alt="" />
             <Link to="/store" className="link_style">
               Store
             </Link>
