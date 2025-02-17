@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar: React.FC = () => {
   return (
     <div className="navBar">
-      <img src="/Logo.jpeg" alt="logo" className="Logo" />
+      <img src="./Logo.jpeg" alt="logo" className="Logo" />
       <nav>
         <ul
           style={{
