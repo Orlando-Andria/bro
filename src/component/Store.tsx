@@ -11,28 +11,28 @@ function Store() {
       name: "Classic Red Pullover Hoodie",
       price: "$1000",
       stock: 12,
-      image: "../src/image/Sweat à capuche Comfort Fleece Teams - Rouge - Red _ MD.jpeg",
+      image: "/Sweat à capuche Comfort Fleece Teams - Rouge - Red _ MD.jpeg",
     },
     {
       id: 2,
       name: "Classic Grey Hooded Sweatshirt",
       price: "$700",
       stock: 0,
-      image: "../src/image/Gildan Sweatshirt Hooded Heavy Blend Cotton for Men and for Women Classic Fit, Men's, Size_2XL, Green.jpeg",
+      image: "/Gildan Sweatshirt Hooded Heavy Blend Cotton for Men and for Women Classic Fit, Men's, Size_2XL, Green.jpeg",
     },
     {
       id: 3,
       name: "Classic Navy Blue Baseball Cap",
       price: "$50",
       stock: 10,
-      image: "src/image/New Era New York Yankees Home Replica Core Classic 2_0 9TWENTY Adjustable Hat - Navy Blue.jpeg",
+      image: "/New Era New York Yankees Home Replica Core Classic 2_0 9TWENTY Adjustable Hat - Navy Blue.jpeg",
     },
     {
       id: 4,
       name: "Classic Black Hooded Sweatshirt",
       price: "$50",
       stock: 20,
-      image: "src/image/Buckle Up Butter Cup Zip-Up Hoodie - Medium _ Multi.jpeg",
+      image: "/Buckle Up Butter Cup Zip-Up Hoodie - Medium _ Multi.jpeg",
     },
     
   ]);
@@ -82,7 +82,6 @@ function Store() {
     setNewProduct({ id:0, name: "", price: "", stock: 0, image: "" });
   };
 
-  // const toggleMenu = () => setMenuOpen(!menuOpen);
   
   return (
     <div className="dashboard">
