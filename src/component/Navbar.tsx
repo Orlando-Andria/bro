@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li className="li_nav">
-            <img src="./prod.png" alt="" />
+            <img src="./prod.png" alt="" /> 
             <Link to="/products" className="link_style">
               Products
             </Link>
