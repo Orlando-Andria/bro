@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Elon from "./Elon.jpeg";
-import Fazza from "./fazza.jpeg";
-import Mark from "./Mark.jpeg";
+import Elon from "/Elon.jpeg";
+import Fazza from "/fazza.jpeg";
+import Mark from "/Mark.jpeg";
 
 type Client = {
   id: number;
