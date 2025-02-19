@@ -2,9 +2,7 @@
    import "./store.scss";
 import Products from "./data";
 
-function Store() {
-  // const [menuOpen, setMenuOpen] = useState(false);
- 
+function Store() { 
   const [products, setProducts] = useState([
     {
       id: 1,
